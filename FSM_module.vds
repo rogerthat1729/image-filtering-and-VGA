@@ -1,0 +1,478 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Nov  9 16:37:42 2023
+# Process ID: 194379
+# Current directory: /home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1
+# Command line: vivado -log FSM_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM_module.tcl
+# Log file: /home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1/FSM_module.vds
+# Journal file: /home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1/vivado.jou
+# Running On: dhd, OS: Linux, CPU Frequency: 2100.000 MHz, CPU Physical cores: 12, Host memory: 33324 MB
+#-----------------------------------------------------------
+source FSM_module.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/btech/cs1221641/HW3_1603/HW3_1603.srcs/utils_1/imports/synth_1/main_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/btech/cs1221641/HW3_1603/HW3_1603.srcs/utils_1/imports/synth_1/main_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top FSM_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 194401
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2617.051 ; gain = 0.000 ; free physical = 21965 ; free virtual = 40078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FSM_module' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/FSM.vhd:18]
+INFO: [Synth 8-3491] module 'memory' declared at '/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/RAMROM.vhd:7' bound to instance 'mem' of component 'memory' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/FSM.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'memory' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/RAMROM.vhd:22]
+INFO: [Synth 8-3491] module 'image' declared at '/home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1/.Xil/Vivado-194379-dhd/realtime/image_stub.vhdl:5' bound to instance 'original' of component 'image' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/RAMROM.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'image' [/home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1/.Xil/Vivado-194379-dhd/realtime/image_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'filter' declared at '/home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1/.Xil/Vivado-194379-dhd/realtime/filter_stub.vhdl:5' bound to instance 'kernel' of component 'filter' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/RAMROM.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'filter' [/home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1/.Xil/Vivado-194379-dhd/realtime/filter_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'computed' declared at '/home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1/.Xil/Vivado-194379-dhd/realtime/computed_stub.vhdl:5' bound to instance 'output' of component 'computed' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/RAMROM.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'computed' [/home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1/.Xil/Vivado-194379-dhd/realtime/computed_stub.vhdl:16]
+INFO: [Synth 8-256] done synthesizing module 'memory' (0#1) [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/RAMROM.vhd:22]
+INFO: [Synth 8-3491] module 'MAC' declared at '/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/MAC.vhd:8' bound to instance 'comp' of component 'MAC' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/FSM.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'MAC' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/MAC.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'MAC' (0#1) [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/MAC.vhd:18]
+WARNING: [Synth 8-5640] Port 'x' is missing in component declaration [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/FSM.vhd:76]
+WARNING: [Synth 8-5640] Port 'y' is missing in component declaration [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/FSM.vhd:76]
+INFO: [Synth 8-3491] module 'vga_controller' declared at '/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/vga.vhd:6' bound to instance 'vga_sync' of component 'vga_controller' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/FSM.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'vga_controller' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/vga.vhd:19]
+WARNING: [Synth 8-614] signal 'vert_curr' is read in the process but is not in the sensitivity list [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/vga.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller' (0#1) [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/vga.vhd:19]
+WARNING: [Synth 8-614] signal 'pos' is read in the process but is not in the sensitivity list [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/FSM.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'FSM_module' (0#1) [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/FSM.vhd:18]
+WARNING: [Synth 8-7129] Port cntrl[31] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[30] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[29] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[28] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[27] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[26] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[25] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[24] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[23] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[22] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[21] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[20] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[19] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[18] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[17] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[16] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[15] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[14] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[13] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[12] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[11] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[10] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[9] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[8] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[7] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[6] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[5] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[4] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[3] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[2] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[1] in module memory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cntrl[0] in module memory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2617.051 ; gain = 0.000 ; free physical = 23024 ; free virtual = 41136
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2617.051 ; gain = 0.000 ; free physical = 23026 ; free virtual = 41138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2617.051 ; gain = 0.000 ; free physical = 23026 ; free virtual = 41138
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2617.051 ; gain = 0.000 ; free physical = 23017 ; free virtual = 41129
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/btech/cs1221641/HW3_1603/HW3_1603.gen/sources_1/ip/image/image/image_in_context.xdc] for cell 'mem/original'
+Finished Parsing XDC File [/home/btech/cs1221641/HW3_1603/HW3_1603.gen/sources_1/ip/image/image/image_in_context.xdc] for cell 'mem/original'
+Parsing XDC File [/home/btech/cs1221641/HW3_1603/HW3_1603.gen/sources_1/ip/filter/filter/filter_in_context.xdc] for cell 'mem/kernel'
+Finished Parsing XDC File [/home/btech/cs1221641/HW3_1603/HW3_1603.gen/sources_1/ip/filter/filter/filter_in_context.xdc] for cell 'mem/kernel'
+Parsing XDC File [/home/btech/cs1221641/HW3_1603/HW3_1603.gen/sources_1/ip/computed/computed/computed_in_context.xdc] for cell 'mem/output'
+Finished Parsing XDC File [/home/btech/cs1221641/HW3_1603/HW3_1603.gen/sources_1/ip/computed/computed/computed_in_context.xdc] for cell 'mem/output'
+Parsing XDC File [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/constrs_1/new/bx.xdc]
+Finished Parsing XDC File [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/constrs_1/new/bx.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/constrs_1/new/bx.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FSM_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FSM_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2681.082 ; gain = 0.000 ; free physical = 22914 ; free virtual = 41024
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2681.082 ; gain = 0.000 ; free physical = 22914 ; free virtual = 41024
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem/kernel' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem/original' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem/output' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 23012 ; free virtual = 41124
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 23012 ; free virtual = 41124
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for mem/original. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mem/kernel. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mem/\output . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 23012 ; free virtual = 41124
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'p1_reg' in module 'vga_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 | 00000000000000000000000000000000
+                 iSTATE1 |                               01 | 00000000000000000000000000000001
+                 iSTATE2 |                               10 | 00000000000000000000000000000010
+                  iSTATE |                               11 | 00000000000000000000000000000011
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'p1_reg' using encoding 'sequential' in module 'vga_controller'
+WARNING: [Synth 8-327] inferring latch for variable 'color_reg_reg' [/home/btech/cs1221641/HW3_1603/HW3_1603.srcs/sources_1/new/FSM.vhd:601]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 23015 ; free virtual = 41128
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 3     
+	   2 Input   12 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               20 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	              32x32  Multipliers := 1     
+	               9x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 11    
+	   4 Input   32 Bit        Muxes := 1     
+	  11 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 8     
+	   9 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 3     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 19    
+	   9 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	  23 Input    8 Bit        Muxes := 1     
+	  16 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	  16 Input    5 Bit        Muxes := 3     
+	  15 Input    5 Bit        Muxes := 1     
+	  13 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	  16 Input    4 Bit        Muxes := 4     
+	   3 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 3     
+	   7 Input    4 Bit        Muxes := 1     
+	  16 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 2     
+	  13 Input    2 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	  12 Input    2 Bit        Muxes := 1     
+	  15 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 16    
+	  12 Input    1 Bit        Muxes := 5     
+	  15 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 3     
+	   6 Input    1 Bit        Muxes := 7     
+	  11 Input    1 Bit        Muxes := 7     
+	  23 Input    1 Bit        Muxes := 2     
+	  13 Input    1 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 4     
+	   7 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 2     
+	  16 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP tmp0, operation Mode is: A*B.
+DSP Report: operator tmp0 is absorbed into DSP tmp0.
+DSP Report: operator tmp0 is absorbed into DSP tmp0.
+DSP Report: Generating DSP tmp_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register tmp_reg is absorbed into DSP tmp_reg.
+DSP Report: operator tmp0 is absorbed into DSP tmp_reg.
+DSP Report: operator tmp0 is absorbed into DSP tmp_reg.
+DSP Report: Generating DSP tmp0, operation Mode is: A*B.
+DSP Report: operator tmp0 is absorbed into DSP tmp0.
+DSP Report: operator tmp0 is absorbed into DSP tmp0.
+DSP Report: Generating DSP tmp_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register tmp_reg is absorbed into DSP tmp_reg.
+DSP Report: operator tmp0 is absorbed into DSP tmp_reg.
+DSP Report: operator tmp0 is absorbed into DSP tmp_reg.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[47]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[46]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[45]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[44]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[43]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[42]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[41]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[40]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[39]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[38]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[37]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[36]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[35]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[34]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[33]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[32]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[31]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[30]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[29]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[28]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[27]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[26]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[25]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[24]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[23]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[22]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[21]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[20]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[19]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[18]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[17]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[16]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[15]) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[47]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[46]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[45]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[44]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[43]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[42]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[41]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[40]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[39]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[38]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[37]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[36]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[35]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[34]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[33]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[32]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[31]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[30]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[29]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[28]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[27]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[26]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[25]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[24]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[23]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[22]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[21]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[20]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[19]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[18]__0) is unused and will be removed from module MAC.
+WARNING: [Synth 8-3332] Sequential element (tmp_reg[17]__0) is unused and will be removed from module MAC.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22987 ; free virtual = 41107
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MAC         | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|MAC         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MAC         | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22847 ; free virtual = 40967
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22757 ; free virtual = 40877
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22747 ; free virtual = 40868
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22745 ; free virtual = 40866
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22745 ; free virtual = 40866
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22745 ; free virtual = 40866
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22745 ; free virtual = 40866
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22745 ; free virtual = 40866
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22745 ; free virtual = 40866
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MAC         | (A'*B)'          | 17     | 0      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|MAC         | A*B'             | 8      | 17     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | (PCIN>>17+A*B')' | 8      | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |image         |         1|
+|2     |filter        |         1|
+|3     |computed      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |computed_bbox |     1|
+|2     |filter_bbox   |     1|
+|3     |image_bbox    |     1|
+|4     |BUFG          |     1|
+|5     |CARRY4        |   419|
+|6     |DSP48E1       |     3|
+|9     |LUT1          |   155|
+|10    |LUT2          |   310|
+|11    |LUT3          |   245|
+|12    |LUT4          |   166|
+|13    |LUT5          |  1049|
+|14    |LUT6          |   208|
+|15    |FDCE          |    22|
+|16    |FDRE          |   284|
+|17    |LD            |     4|
+|18    |IBUF          |     3|
+|19    |OBUF          |    14|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22745 ; free virtual = 40866
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2681.082 ; gain = 0.000 ; free physical = 22799 ; free virtual = 40919
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 22799 ; free virtual = 40919
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2681.082 ; gain = 0.000 ; free physical = 22893 ; free virtual = 41013
+INFO: [Netlist 29-17] Analyzing 426 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'FSM_module' is not ideal for floorplanning, since the cellview 'FSM_module' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2681.082 ; gain = 0.000 ; free physical = 22835 ; free virtual = 40955
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+Synth Design complete, checksum: 7d722044
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 2681.082 ; gain = 64.031 ; free physical = 23132 ; free virtual = 41252
+INFO: [Common 17-1381] The checkpoint '/home/btech/cs1221641/HW3_1603/HW3_1603.runs/synth_1/FSM_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FSM_module_utilization_synth.rpt -pb FSM_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  9 16:38:17 2023...
